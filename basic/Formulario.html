@@ -7,41 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My title</title>
     <link rel="stylesheet" href="style.css" />
+    <title><h1>Formulario en html</h1></title>
   </head>
-
   <body>
-      <main>
-        <aside>
-          <h1>Formulario en html</h1>
-          <p> Tarea 1: construir un formulario en html que nos permita enviar la siguiente información:</p>
-          <p> Name: MyName </p>
-          <p> Description: My long Description</p>
-          <p> StartDate: 12/02/2022</p>
-          <p> EndDate: 20/02/2022</p>
-          <p> FavoriteFood: pizza, taco, hamburguer, ramen</p>
-        </aside>
-        <section>
+        <section class="form-register">
           <p>
-            <strong>Completa el formulario: </strong> 
+            <strong><h1>Formulario Personal </h1></strong> 
           </p>
-          <form action="">
-              <p>Name</p>
-            <input type="text" name="name" id="name">
-              <p>Description</p>
-              <input type="text" name="Description" id="Description">  
-            <p>StartDate</p>
-            <input type="date" name="Sdate" id="Sdate">
-            <p>EndDate</p>
-            <input type="date" name="Edate" id="Edate">
-            <P>FavoriteFood</P>
-            <select name="food" id="Favoritefood">
+            <input class="controls" type="text" name="name" id="name" placeholder="Ingrese su nombre"> 
+            <input class="controls" type="text" name="Description" id="Description" placeholder="Ingrese descripcion">  
+            <input class="controls" type="date" name="Sdate" id="Sdate" placeholder="Ingrese Fecha de Entrada">
+            <input class="controls" type="date" name="Edate" id="Edate" placeholder="Ingrese Fecha de Salida">
+            <select name="food" id="Favoritefood" aria-placeholder="Ingrese su alimento favorito">
               <option value="PZ">Pizza</option>
               <option value="HM">Hamburguer</option>
               <option value="RM">Ramen</option>
               <option value="TC">Taco</option>
-          </form> 
+            </select>
+            <p>Estoy de acuerdo con <a href="#"> Terminos y condiciones</a></p>
+            <input class="boton" type="submit" value="Registrar">
+            <p><a href="#">¿Ya me he registrado?</a></p>
         </section>
-      </main>
-  </body>
 
+  </body>
 </html>
